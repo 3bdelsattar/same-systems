@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32886" started-at="2021-03-29T13:20:20 EET" finished-at="2021-03-29T13:20:53 EET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32886" started-at="2021-03-29T13:20:20 EET" finished-at="2021-03-29T13:20:53 EET">
+      <class name="testSuites.openThePostTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testSuites.openThePostTest@a38d7a3]" name="setup" is-config="true" duration-ms="5748" started-at="2021-03-29T13:20:14 EET" finished-at="2021-03-29T13:20:20 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ClickOnSearchbar()[pri:1, instance:testSuites.openThePostTest@a38d7a3]" name="ClickOnSearchbar" duration-ms="2726" started-at="2021-03-29T13:20:20 EET" finished-at="2021-03-29T13:20:22 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnSearchbar -->
+        <test-method status="PASS" signature="searchForText()[pri:2, instance:testSuites.openThePostTest@a38d7a3]" name="searchForText" duration-ms="10936" started-at="2021-03-29T13:20:22 EET" finished-at="2021-03-29T13:20:33 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForText -->
+        <test-method status="PASS" signature="openProfile()[pri:3, instance:testSuites.openThePostTest@a38d7a3]" name="openProfile" duration-ms="1814" started-at="2021-03-29T13:20:33 EET" finished-at="2021-03-29T13:20:35 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProfile -->
+        <test-method status="PASS" signature="seeAllActivities()[pri:4, instance:testSuites.openThePostTest@a38d7a3]" name="seeAllActivities" duration-ms="4422" started-at="2021-03-29T13:20:35 EET" finished-at="2021-03-29T13:20:40 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seeAllActivities -->
+        <test-method status="PASS" signature="chooseThePost()[pri:5, instance:testSuites.openThePostTest@a38d7a3]" name="chooseThePost" duration-ms="6935" started-at="2021-03-29T13:20:40 EET" finished-at="2021-03-29T13:20:47 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseThePost -->
+        <test-method status="PASS" signature="checkLikedCount()[pri:6, instance:testSuites.openThePostTest@a38d7a3]" name="checkLikedCount" duration-ms="621" started-at="2021-03-29T13:20:47 EET" finished-at="2021-03-29T13:20:47 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLikedCount -->
+        <test-method status="FAIL" signature="clickonLike()[pri:6, instance:testSuites.openThePostTest@a38d7a3]" name="clickonLike" duration-ms="5399" started-at="2021-03-29T13:20:47 EET" finished-at="2021-03-29T13:20:53 EET">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Mohamed Abdelsattar] but found [Mohamed Atef • ‪1st]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Mohamed Abdelsattar] but found [Mohamed Atef • ‪1st]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testSuites.openThePostTest.clickonLike(openThePostTest.java:100)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonLike -->
+      </class> <!-- testSuites.openThePostTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
